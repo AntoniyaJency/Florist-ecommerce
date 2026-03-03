@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <div class="cart-icon">
+                <div class="cart-icon" id="cart-toggle">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -41,6 +41,22 @@
             </div>
         </div>
     </header>
+    <div class="cart-panel" id="cart-panel">
+        <div class="cart-panel-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" type="button" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <p class="cart-empty">Your cart is empty.</p>
+        </div>
+        <div class="cart-panel-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="cart-total-amount">$0.00</span>
+            </div>
+            <button class="btn-primary cart-checkout" type="button">Checkout</button>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
